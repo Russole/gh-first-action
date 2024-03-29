@@ -1,11 +1,12 @@
-name:First Workflow
-on:Workflow_dispatch # event
+name: First Workflow
+on: workflow_dispatch
 jobs:
-  first-job: # 自訂義job名稱
-    runs-on:ubuntu-latest # 執行workflow的環境
+  first-job:
+    runs-on: ubuntu-latest
     steps:
-      -name:Pring greeting
-       run: echo "Hello world"
-      -name:Pring goodbye
-       run: echo "Done - bye!"
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
+
     
