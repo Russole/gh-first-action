@@ -4,7 +4,7 @@ on: workflow_dispatch
 jobs:
   # 自訂義job名稱
   first-job:
-    # 執行workflow的環境
+    # 選擇環境讓 Steps 執行
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
